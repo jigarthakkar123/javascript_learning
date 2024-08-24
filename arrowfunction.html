@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Arrow Function Demo</p>
+
+<button id="btn">Click Me!</button>
+
+<p id="demo"></p>
+
+<script>
+let hello = "";
+
+hello = () => {
+  document.getElementById("demo").innerHTML += this;
+}
+
+window.addEventListener("load", hello);
+
+document.getElementById("btn").addEventListener("click", hello);
+</script>
+
+</body>
+</html>
